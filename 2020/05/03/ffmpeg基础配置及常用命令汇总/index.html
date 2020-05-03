@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: eclipse | Tor小黑的博客</title>
+  <title>ffmpeg基础配置及常用命令汇总 | Tor小黑的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Tor小黑的博客">
-<meta property="og:url" content="http://yoursite.com/tags/eclipse/index.html">
+  <meta name="description" content="Writing by Tor小黑    —-心中藏之，无日忘之">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ffmpeg基础配置及常用命令汇总">
+<meta property="og:url" content="http://yoursite.com/2020/05/03/ffmpeg%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%B1%87%E6%80%BB/index.html">
 <meta property="og:site_name" content="Tor小黑的博客">
+<meta property="og:description" content="Writing by Tor小黑    —-心中藏之，无日忘之">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-03T12:31:18.000Z">
+<meta property="article:modified_time" content="2020-05-03T12:32:04.539Z">
 <meta property="article:author" content="Tor小黑">
+<meta property="article:tag" content="ffmpeg">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Tor小黑的博客" type="application/atom+xml">
@@ -155,140 +160,367 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-ffmpeg基础配置及常用命令汇总" class="article article-type-post " itemscope itemprop="blogPost">
+      <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/03/eclipse%E6%96%B0%E5%BB%BAMaven%E9%A1%B9%E7%9B%AE/" class="archive-article-date">
-  	<time datetime="2020-05-03T02:09:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-03</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/03/eclipse%E6%96%B0%E5%BB%BAMaven%E9%A1%B9%E7%9B%AE/">eclipse新建Maven项目</a>
+    <h1 class="article-title" itemprop="name">
+      ffmpeg基础配置及常用命令汇总
     </h1>
   
 
-        <div class="article-info info-on-right">
+        
+        <a href="/2020/05/03/ffmpeg%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%B1%87%E6%80%BB/" class="archive-article-date">
+  	<time datetime="2020-05-03T12:31:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-03</time>
+</a>
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1.9k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">8分</span>
+      </span>
+    </span>
+</div>
           
+        <!-- 添加完成 -->
+        
+        
+      </header>
+
+	
+        <span class="archive-article-date">
+            阅读量 <span id="busuanzi_value_page_pv"></span>
+        </span>
+	
+      </header>
+
+
+
+
+    
+
+    <!-- 目录内容 -->
+        
+            <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+            <span class="btn-bg"></span>
+            <span class="btn-text">文章导航</span>
+            </p>
+            <div id="toc-article" class="toc-article">
+                <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+                <strong class="toc-title">文章目录</strong>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ffmpeg基本配置及常用命令汇总"><span class="toc-number">1.</span> <span class="toc-text">ffmpeg基本配置及常用命令汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、安装"><span class="toc-number">1.0.1.</span> <span class="toc-text">一、安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、常用命令"><span class="toc-number">1.0.2.</span> <span class="toc-text">二、常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、视频、音频截取"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">1、视频、音频截取</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、视频、音频文件合成"><span class="toc-number">1.0.3.</span> <span class="toc-text">2、视频、音频文件合成</span></a></li></ol></li></ol></li></ol>
+           </div>
+           <script type="text/javascript">
+            function showToc(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:block");
+                show_toc_btn.setAttribute("style","display:none");
+                };
+            function showBtn(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:none");
+                show_toc_btn.setAttribute("style","display:block");
+                };
+           </script>
+        
+<!-- 目录内容结束 -->
+
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong><em>Writing by Tor小黑    —-心中藏之，无日忘之</em></strong></p>
+<a id="more"></a>
+<h1 id="ffmpeg基本配置及常用命令汇总"><a href="#ffmpeg基本配置及常用命令汇总" class="headerlink" title="ffmpeg基本配置及常用命令汇总"></a>ffmpeg基本配置及常用命令汇总</h1><h3 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h3><p>官网：<a href="http://ffmpeg.org/" target="_blank" rel="noopener">http://ffmpeg.org/</a> 下载解压缩会产生下列三个文件：<br>为了方便使用，我们将这三个exe文件放到system32目录下，或者添加系统环境变量，然后通过命令提示符输入命令即可实现自己想要的功能</p>
+<pre><code>ffmpeg.exe 进行格式转换
+ffplay.exe 可以当作播放器用，能播放各种格式的视频音频
+ffprobe.exe 查看音频或视频文件格式详细信息
+ffplay.exe -i +文件名   //播放命令</code></pre><h3 id="二、常用命令"><a href="#二、常用命令" class="headerlink" title="二、常用命令"></a>二、常用命令</h3><pre><code>cls：清空命令行  按住shift鼠标右键打开命令行
+ffplay +文件名.后缀直接播放   p健和空格键暂停  按q结束 f健全屏 鼠标右键调整播放位置
+ffprobe+文件 查看文件属性</code></pre><h4 id="1、视频、音频截取"><a href="#1、视频、音频截取" class="headerlink" title="1、视频、音频截取"></a>1、视频、音频截取</h4><pre><code>ffmpeg -i 1.mp4 -ss 00:01:00 -to 00:01:10 -vcodec copy -an 2.mp4 截视频，去除背景音
+ffmpeg -i 1.mp4 -vcodec copy -an 2.mp4  加上-an是静音播放，去除背景音
+ffmpeg -i 1.mp4 -acodec copy -vn 2.mp3   提取音频
+ffmpeg -i 1.mp3 -ss 00:01:00 -to 00:01:10 -acodec copy 2.mp3  截取一段音频
+ffmpeg -i 1.mp3 -ss 00:01:00 -t 10 -acodec copy 2.mp3截取10秒音频
+ffmpeg -i 1.mp4 -ss 00:01:00 -to 00:01:10 -c copy 2.mp4 截取视频
+ffmpeg -ss 00:01:00 -i 1.mp4 -to 00:01:10 -c copy -copyts 2.mp4 加快截取视频效率
+ffmpeg -i 1.mp4 -ss 00:01:00 -vfranes 1 img.jpg截图
+ffmpeg -i 1.mp4 -i 2.mp3 -c copy out.mp4 视频音频合并
+ffmpeg -i 1.mp4 -i logo.png -filter_complex &quot;overlay=20:20&quot; out.mp4添加水印
+ffmpeg -i 1.mp4 -ss 7.5 -to 8.5 -s 640x320 -r 15 out.gif  输出动图（缩放大小、降低帧率）
+ffmpeg -f gdigrab -i desktop rec.mp4录制屏幕（无声）</code></pre><h3 id="2、视频、音频文件合成"><a href="#2、视频、音频文件合成" class="headerlink" title="2、视频、音频文件合成"></a>2、视频、音频文件合成</h3><pre><code>多个MP3文件合成一个MP3 文件（连接）
+ffmpeg -i &quot;concat:balian.mp3|yousheng.mp3&quot;  -acodec copy output.mp3
+
+多个MP3文件合成一个MP3 文件（混合）
+ffmpeg -i 124.mp3 -i 123.mp3 -filter_complex amix=inputs=2:duration=first:dropout_transition=2 -f mp3 remix.mp3
+（-filter_complex ffmpeg滤镜功能，非常强大
+amix是混合多个音频到单个音频输出
+inputs=2代表是2个音频文件，如果更多则代表对应数字
+duration 确定最终输出文件的长度
+longest(最长)|shortest（最短）|first（第一个文件）
+
+
+ffmpeg -f concat -safe 0 -i filelist.txt -c copy output.mp4 连接多个视频（为了防止出现“Unsafe file name &apos;D:\delphisr\腾讯下载地址解析子串\k0028qzpkdl.321002.1.ts&apos;filelist.txt: Operation not permitted” 必须在命令中加入“-safe 0”）
+
+不同类型视频合成
+先将 mp4 转化为同样编码形式的 ts 流，因为 ts流是可以 concate 的，先把 mp4 封装成 ts ，然后 concate ts 流， 最后再把 ts 流转化为 mp4。
+ffmpeg -i 1.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 1.ts
+ffmpeg -i 2.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 2.ts
+ffmpeg -i &quot;concat:1.ts|2.ts&quot; -acodec copy -vcodec copy -absf aac_adtstoasc output.mp4
+
+2.视频旋转：ffmpeg -i input.mp4 -vf &quot;transpose=2&quot; output.mp4
+-vf表示过滤器，后边&quot;&quot;中的内容为过滤条件，此时transpose表示旋转
+旋转参数：0，1，2，3分别表示顺时针并左右翻转，顺时针，逆时针，逆时针并左右翻转
+
+
+{
+图片合成视频
+1、ffmpeg -f image2 -r 1 -i path\%d.jpg -vcodec mpeg4 path\out.mp4
+
+ ffmpeg -r 1 -f concat -safe 0 -i path\list.txt -c:v libx264 (-vf fps=25) -pix_fmt yuv420p out.mp4
+
+-vcodec h264 -r 30 -t 10 -b 16000000 output.mp4
+ ffmpeg  -r 1 -i %d.jpg -c:v libx264 -vf fps=25 -pix_fmt yuv420p out.mp4
+
+图片转视频：ffmpeg -framerate 1 -i %03d.png -c:v libx264 -r 30 -pix_fmt yuv420p out.mp4
+
+ffmpeg -r 25 -loop 1 -i xinjinping.jpg -pix_fmt yuv420p -vcodec libx264 -b:v 600k -r:v 25 -preset medium -crf 30 -s 720x576 -vframes 250 -r 25 -t 10 a.mp4
+
+
+2、ffmpeg -f image2 -i /images/%d.jpg -vcodec libx264 -r 25 -b 200k test.mp4
+
+ ffmpeg -f image2 -i %d.jpg -vcodec libx264 -r 1 -b 200k test.mp4（1）-r 25 表示每秒播放25帧（2）-b 200k 指定码率为200k
+
+3、ffmpeg -threads2 -y -r 10 -i /tmpdir/image%04d.jpg -i audio.mp3 -absf aac_adtstoasc output.mp4
+参数的解释含义：
+-threads 2 以两个线程进行运行， 加快处理的速度。
+-y 对输出文件进行覆盖
+-r 10 fps设置为10帧/秒（不同位置有不同含义，后面再解释）
+-i /tmpdir/image%04d.jpg 输入图片文件，图片文件保存为 image0001.jpg image0002.jpg ….
+-i audio.mp3 输入的音频文件
+-absf aac_adtstoasc 将结果的音频格式转为faac格式时需要这个选项。将音频格式转为faac是因为在iphone上某些音频格式的视频无法播放，例如mp3. 但faac格式的音频的视频在iphone上可以播放。-absf 的意思是设置一个bitstream filter进行某些转换。可以用ffmpeg -bsfs 查看所有支持的bitstream filter。 bitstream filter和 aac_adtstoasc的具体含义我也说不上。但是如果不用这个选项又会导致转换失败。
+}
+
+单张图片合成视频
+//单张图片合成视频，这里需要用到-loop 1 开启循环，和-t 10 设置为10秒
+ffmpeg -r 1 -f image2 -loop 1 -i 1.png  -t 10 out.mp4 -y
+
+ffmpeg -i 1.jpg -filter_complex color=s=720x1280:c=black[vbg];[0:v]scale=720x1280[sv];[vbg][sv]overlay[vout] -map [vout] -ss 0 -to 10 -y 1.mp4
+ffmpeg -i 1.png -filter_complex color=s=500x500:c=black,trim=0:5[vbg];[0:v]scale=500x500[sv];[vbg][sv]overlay[vout] -map [vout] -y 1.mp4
+
+
+
+每隔一秒钟截取一帧图片
+ffmpeg -i C:\Users\Administrator\Desktop\8.mp4 -ss 00:00 -t 10 -r 1 -f image2 -vf fps=fps=1 C:\Users\Administrator\Desktop\e\%02d.png 
+提示： 
+1、-i 后面跟输入文件路径 
+2、-ss 后面跟开始截图的时间 -t 表示截取的视频长度为10s 
+3、-vf fps=fps=1 表示截图频率为每秒1帧（和-r 1的作用是一样的，所以可以去掉r 1） 
+4、-f image2表示输入或输出文件的格式是image2格式，f是format格式的意思
+
+截取视频前3秒 并转化为gif
+ffmpeg -ss 00:00:01 -t 3 -i C:\Users\Administrator\Desktop\9.mp4 -vf crop=iw:ih*2/3 -s 320x240 -r 7 C:\Users\Administrator\Desktop\8.gif
+提示：
+1、-ss 00：00：01表示从视频第一秒开始截取 
+2、- t 表示截图3秒钟的视频 
+3、-vf crop=iw:ih*2/3 表示截取视频的部分区域，其中宽为视频宽度，高为原视频的2/3 
+4、-r 7 表示每秒帧率为7帧 
+5、最后直接加上要生成的gif的路径就会把截取好的视频输出为gif了。
+
+gif转化为视频
+ffmpeg -f gif -i test.gif test.mp4
+转化高质量gif 修改比特率
+ffmpeg -i test.mp4 - b:v 2048k test.gif
+
+
+视频编码或码率控制方式：CBR恒定比特率   VBR可变比特率（使用较多）CRF固定质量码率控制方式
+
+ffmpeg 压制高质量视频
+方法一：ffmpeg -i 1.mp4 -vcodec libx264 -pix_fmt yuv420p -crf 16 -acodec copy 2.mp4
+-vcodec libx264指定H264编码器
+-pix_fmt yuv420p指定像素格式
+-crf 16 指定crf固定质量参数
+-acodec copy指定音频直接复制
+方法二：两遍编码模式 two pass
+ffmpeg -i 1.mp4 -vcodec libx264 -pix_fmt yuv420p -vb 6000k -pass 1 -f mp4 NUL
+ffmpeg -i 1.mp4 -vcodec libx264 -pix_fmt yuv420p -vb 6000k -pass 2 -f mp4 2.mp4
+-f mp4指定最终输出文件格式为mp4
+
+MP4封装：H264视频编码+AAC音频编码
+OGG封装：Theora视频编码+Vorbis音频编码 开源免费
+
+ IDM后台下载直播视频</code></pre>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Maven</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">eclipse</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ffmpeg</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA/1-常用软件及配置//" class="article-tag-list-link color1"><1>常用软件及配置</a>
+        			<a href="/categories/ffmpeg//" class="article-tag-list-link color2">ffmpeg</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/03/ffmpeg%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%B1%87%E6%80%BB/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/30/eclipse%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-  	<time datetime="2020-04-30T11:29:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-30</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/05/03/Hexo%E6%9B%B4%E6%8D%A2yilia%E4%B8%BB%E9%A2%98%EF%BC%8C%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E8%AE%A1%EF%BC%8C%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo更换yilia主题，个性化设计，详细教程</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/30/eclipse%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">eclipse安装配置</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">eclipse</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA/1-常用软件及配置//" class="article-tag-list-link color1"><1>常用软件及配置</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -311,9 +543,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
