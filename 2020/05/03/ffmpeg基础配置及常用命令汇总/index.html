@@ -16,7 +16,7 @@
 <meta property="og:description" content="Writing by Tor小黑    —-心中藏之，无日忘之">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-03T12:31:18.000Z">
-<meta property="article:modified_time" content="2020-05-03T12:32:04.539Z">
+<meta property="article:modified_time" content="2020-05-19T05:42:59.449Z">
 <meta property="article:author" content="Tor小黑">
 <meta property="article:tag" content="ffmpeg">
 <meta name="twitter:card" content="summary">
@@ -183,7 +183,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1.9k字</span>
+        <span class="post-count">2.2k字</span>
       </span>
     </span>
 
@@ -192,7 +192,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">8分</span>
+        <span class="post-count">9分</span>
       </span>
     </span>
 </div>
@@ -223,7 +223,7 @@
             <div id="toc-article" class="toc-article">
                 <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
                 <strong class="toc-title">文章目录</strong>
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ffmpeg基本配置及常用命令汇总"><span class="toc-number">1.</span> <span class="toc-text">ffmpeg基本配置及常用命令汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、安装"><span class="toc-number">1.0.1.</span> <span class="toc-text">一、安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、常用命令"><span class="toc-number">1.0.2.</span> <span class="toc-text">二、常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、视频、音频截取"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">1、视频、音频截取</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、视频、音频文件合成"><span class="toc-number">1.0.3.</span> <span class="toc-text">2、视频、音频文件合成</span></a></li></ol></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ffmpeg基本配置及常用命令汇总"><span class="toc-number">1.</span> <span class="toc-text">ffmpeg基本配置及常用命令汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、安装"><span class="toc-number">1.0.1.</span> <span class="toc-text">一、安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、常用命令"><span class="toc-number">1.0.2.</span> <span class="toc-text">二、常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本功能使用"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">基本功能使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1、去除视频水印："><span class="toc-number">1.0.2.2.</span> <span class="toc-text">1、去除视频水印：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、裁掉视频字幕"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">2、裁掉视频字幕</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、改变视频原始尺寸："><span class="toc-number">1.0.2.4.</span> <span class="toc-text">3、改变视频原始尺寸：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4、gif转化为视频"><span class="toc-number">1.0.2.5.</span> <span class="toc-text">4、gif转化为视频</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5、截取视频前3秒-并转化为gif"><span class="toc-number">1.0.2.6.</span> <span class="toc-text">5、截取视频前3秒 并转化为gif</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6、每隔一秒钟截取一帧图片（视频转图片）"><span class="toc-number">1.0.2.7.</span> <span class="toc-text">6、每隔一秒钟截取一帧图片（视频转图片）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7、单张图片合成视频"><span class="toc-number">1.0.2.8.</span> <span class="toc-text">7、单张图片合成视频</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8、不同编码类型的多段视频合成"><span class="toc-number">1.0.2.9.</span> <span class="toc-text">8、不同编码类型的多段视频合成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9、多段视频合成"><span class="toc-number">1.0.2.10.</span> <span class="toc-text">9、多段视频合成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10、视频旋转"><span class="toc-number">1.0.2.11.</span> <span class="toc-text">10、视频旋转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#11、多个MP3文件合成一个MP3-文件（连接，一段接一段）"><span class="toc-number">1.0.2.12.</span> <span class="toc-text">11、多个MP3文件合成一个MP3 文件（连接，一段接一段）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12、多个MP3文件合成一个MP3-文件（混合，同时播放）"><span class="toc-number">1.0.2.13.</span> <span class="toc-text">12、多个MP3文件合成一个MP3 文件（混合，同时播放）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13、ffmpeg-压制高质量视频"><span class="toc-number">1.0.2.14.</span> <span class="toc-text">13、ffmpeg 压制高质量视频</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14、多张图片合成视频"><span class="toc-number">1.0.2.15.</span> <span class="toc-text">14、多张图片合成视频</span></a></li></ol></li></ol></li></ol></li></ol>
            </div>
            <script type="text/javascript">
             function showToc(){
@@ -253,45 +253,67 @@ ffplay.exe 可以当作播放器用，能播放各种格式的视频音频
 ffprobe.exe 查看音频或视频文件格式详细信息
 ffplay.exe -i +文件名   //播放命令</code></pre><h3 id="二、常用命令"><a href="#二、常用命令" class="headerlink" title="二、常用命令"></a>二、常用命令</h3><pre><code>cls：清空命令行  按住shift鼠标右键打开命令行
 ffplay +文件名.后缀直接播放   p健和空格键暂停  按q结束 f健全屏 鼠标右键调整播放位置
-ffprobe+文件 查看文件属性</code></pre><h4 id="1、视频、音频截取"><a href="#1、视频、音频截取" class="headerlink" title="1、视频、音频截取"></a>1、视频、音频截取</h4><pre><code>ffmpeg -i 1.mp4 -ss 00:01:00 -to 00:01:10 -vcodec copy -an 2.mp4 截视频，去除背景音
-ffmpeg -i 1.mp4 -vcodec copy -an 2.mp4  加上-an是静音播放，去除背景音
-ffmpeg -i 1.mp4 -acodec copy -vn 2.mp3   提取音频
-ffmpeg -i 1.mp3 -ss 00:01:00 -to 00:01:10 -acodec copy 2.mp3  截取一段音频
-ffmpeg -i 1.mp3 -ss 00:01:00 -t 10 -acodec copy 2.mp3截取10秒音频
-ffmpeg -i 1.mp4 -ss 00:01:00 -to 00:01:10 -c copy 2.mp4 截取视频
-ffmpeg -ss 00:01:00 -i 1.mp4 -to 00:01:10 -c copy -copyts 2.mp4 加快截取视频效率
-ffmpeg -i 1.mp4 -ss 00:01:00 -vfranes 1 img.jpg截图
-ffmpeg -i 1.mp4 -i 2.mp3 -c copy out.mp4 视频音频合并
-ffmpeg -i 1.mp4 -i logo.png -filter_complex &quot;overlay=20:20&quot; out.mp4添加水印
-ffmpeg -i 1.mp4 -ss 7.5 -to 8.5 -s 640x320 -r 15 out.gif  输出动图（缩放大小、降低帧率）
-ffmpeg -f gdigrab -i desktop rec.mp4录制屏幕（无声）</code></pre><h3 id="2、视频、音频文件合成"><a href="#2、视频、音频文件合成" class="headerlink" title="2、视频、音频文件合成"></a>2、视频、音频文件合成</h3><pre><code>多个MP3文件合成一个MP3 文件（连接）
-ffmpeg -i &quot;concat:balian.mp3|yousheng.mp3&quot;  -acodec copy output.mp3
-
-多个MP3文件合成一个MP3 文件（混合）
-ffmpeg -i 124.mp3 -i 123.mp3 -filter_complex amix=inputs=2:duration=first:dropout_transition=2 -f mp3 remix.mp3
-（-filter_complex ffmpeg滤镜功能，非常强大
-amix是混合多个音频到单个音频输出
-inputs=2代表是2个音频文件，如果更多则代表对应数字
-duration 确定最终输出文件的长度
-longest(最长)|shortest（最短）|first（第一个文件）
-
-
-ffmpeg -f concat -safe 0 -i filelist.txt -c copy output.mp4 连接多个视频（为了防止出现“Unsafe file name &apos;D:\delphisr\腾讯下载地址解析子串\k0028qzpkdl.321002.1.ts&apos;filelist.txt: Operation not permitted” 必须在命令中加入“-safe 0”）
-
-不同类型视频合成
-先将 mp4 转化为同样编码形式的 ts 流，因为 ts流是可以 concate 的，先把 mp4 封装成 ts ，然后 concate ts 流， 最后再把 ts 流转化为 mp4。
-ffmpeg -i 1.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 1.ts
-ffmpeg -i 2.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 2.ts
-ffmpeg -i &quot;concat:1.ts|2.ts&quot; -acodec copy -vcodec copy -absf aac_adtstoasc output.mp4
-
-2.视频旋转：ffmpeg -i input.mp4 -vf &quot;transpose=2&quot; output.mp4
+ffprobe+文件 查看文件属性
+IDM后台下载直播视频
+视频编码或码率控制方式：CBR恒定比特率   VBR可变比特率（使用较多）CRF固定质量码率控制方式
+MP4封装：H264视频编码+AAC音频编码
+OGG封装：Theora视频编码+Vorbis音频编码 开源免费</code></pre><h4 id="基本功能使用"><a href="#基本功能使用" class="headerlink" title="基本功能使用"></a>基本功能使用</h4><pre><code>1.ffmpeg -i 1.mp4 -ss 00:01:00 -to 00:01:10 -vcodec copy -an 2.mp4 截视频，去除背景音
+2.ffmpeg -i 1.mp4 -vcodec copy -an 2.mp4  加上-an是静音播放，去除背景音
+3.ffmpeg -i 1.mp4 -acodec copy -vn 2.mp3   提取视频中音频
+4.ffmpeg -i 1.mp3 -ss 00:01:00 -to 00:01:10 -acodec copy 2.mp3  截取一段音频
+5.ffmpeg -i 1.mp3 -ss 00:01:00 -t 10 -acodec copy 2.mp3截取10秒音频（时长自己指定）
+6.ffmpeg -i 1.mp4 -ss 00:01:00 -to 00:01:10 -c copy 2.mp4   截取视频（时长自己指定）
+7.ffmpeg -ss 00:01:00 -i 1.mp4 -to 00:01:10 -c copy -copyts 2.mp4     加上-copyts参数加快截取视频效率
+8.ffmpeg -i 1.mp4 -ss 00:01:00 -vfranes 1 img.jpg  在视屏指定时间处截图
+9.ffmpeg -i 1.mp4 -i 2.mp3 -c copy out.mp4   视频音频合并
+10.ffmpeg -i 1.mp4 -i logo.png -filter_complex &quot;overlay=100:80&quot; out.mp4    给视频添加水印
+11.ffmpeg -i 1.mp4 -ss 7.5 -to 8.5 -s 640x320 -r 15 out.gif  输出动图（缩放大小、降低帧率）
+12.ffmpeg -f gdigrab -i desktop rec.mp4录制屏幕（无声）</code></pre><h4 id="1、去除视频水印："><a href="#1、去除视频水印：" class="headerlink" title="1、去除视频水印："></a>1、去除视频水印：</h4><pre><code>1.用画图工具，打开视频的截图，计算水印的位置
+计算得到，我的视频水印坐标为：50，640.  水印的宽高为：180,60.
+2.执行命令 ：/usr/bin/ffmpeg -i 1.mp4 -vf &quot;delogo=x=50:y=640:w=180:h=60:show=0&quot; -c:a copy 2.mp4
+生成的2.mp4为去掉水印的视频。
+show=0水印位置没有边框，show=1水印位置是一个绿色框覆盖</code></pre><h4 id="2、裁掉视频字幕"><a href="#2、裁掉视频字幕" class="headerlink" title="2、裁掉视频字幕"></a>2、裁掉视频字幕</h4><pre><code>ffmpeg -i in.mp4 -vf crop=&apos;1280:720:0:0&apos; -acodec copy out.mp4
+其中crop常用的4个参数分别用:隔开，w，h，x，y，分别是裁剪的宽高和裁剪的位置。
+视频裁剪使用crop视频滤镜，它可以把视频从指定的x、y位置裁剪成指定的w、h。坐标系是基于左上点开始的。</code></pre><h4 id="3、改变视频原始尺寸："><a href="#3、改变视频原始尺寸：" class="headerlink" title="3、改变视频原始尺寸："></a>3、改变视频原始尺寸：</h4><pre><code>ffmpeg -i input.mp4 -s 320x240 output.mp4
+320x240即为输出视频宽高比</code></pre><h4 id="4、gif转化为视频"><a href="#4、gif转化为视频" class="headerlink" title="4、gif转化为视频"></a>4、gif转化为视频</h4><pre><code>ffmpeg -f gif -i test.gif test.mp4
+转化高质量gif 修改比特率
+ffmpeg -i test.mp4 - b:v 2048k test.gif</code></pre><h4 id="5、截取视频前3秒-并转化为gif"><a href="#5、截取视频前3秒-并转化为gif" class="headerlink" title="5、截取视频前3秒 并转化为gif"></a>5、截取视频前3秒 并转化为gif</h4><pre><code>ffmpeg -ss 00:00:01 -t 3 -i C:\Users\Administrator\Desktop\9.mp4 -vf crop=iw:ih*2/3 -s 320x240 -r 7 C:\Users\Administrator\Desktop\8.gif
+提示：
+1、-ss 00：00：01表示从视频第一秒开始截取 
+2、- t 表示截图3秒钟的视频 
+3、-vf crop=iw:ih*2/3 表示截取视频的部分区域，其中宽为视频宽度，高为原视频的2/3 
+4、-r 7 表示每秒帧率为7帧 
+5、最后直接加上要生成的gif的路径就会把截取好的视频输出为gif了。</code></pre><h4 id="6、每隔一秒钟截取一帧图片（视频转图片）"><a href="#6、每隔一秒钟截取一帧图片（视频转图片）" class="headerlink" title="6、每隔一秒钟截取一帧图片（视频转图片）"></a>6、每隔一秒钟截取一帧图片（视频转图片）</h4><pre><code>ffmpeg -i input.mp4 -ss 00:00:00 -t 10 -f image2 -vf fps=fps=1 .\img\%02d.png 
+提示： 
+1、-i 后面跟输入文件路径 
+2、-ss 后面跟开始截图的时间 -t 表示截取的视频长度为10s 
+3、-vf fps=fps=1 表示截图频率为每秒1帧（和-r 1的作用是一样的，所以可以去掉r 1） 
+4、-f image2表示输入或输出文件的格式是image2格式，f是format格式的意思
+5、需要在当前文件夹下新建一个img文件夹，用来存储图片</code></pre><h4 id="7、单张图片合成视频"><a href="#7、单张图片合成视频" class="headerlink" title="7、单张图片合成视频"></a>7、单张图片合成视频</h4><pre><code>单张图片合成视频，这里需要用到-loop 1 开启循环，和-t 10 设置为10秒
+ffmpeg -r 1 -f image2 -loop 1 -i 1.png  -t 10 out.mp4</code></pre><h4 id="8、不同编码类型的多段视频合成"><a href="#8、不同编码类型的多段视频合成" class="headerlink" title="8、不同编码类型的多段视频合成"></a>8、不同编码类型的多段视频合成</h4><pre><code>先将 mp4 转化为同样编码形式的 ts 流，因为 ts流是可以 concate 的，先把 mp4 封装成 ts ，然后 concate ts 流， 最后再把 ts 流转化为 mp4。
+1.ffmpeg -i 1.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 1.ts
+2.ffmpeg -i 2.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 2.ts
+3.ffmpeg -i &quot;concat:1.ts|2.ts&quot; -acodec copy -vcodec copy -absf aac_adtstoasc output.mp4</code></pre><h4 id="9、多段视频合成"><a href="#9、多段视频合成" class="headerlink" title="9、多段视频合成"></a>9、多段视频合成</h4><pre><code>ffmpeg -f concat -safe 0 -i filelist.txt -c copy output.mp4 
+1、新建filelist.txt文本文档文件
+    里面写入要连接的视频，格式为：
+    file 12.mp4
+    file 33.mp4
+    file 24.mp4
+2、为了防止出现“Unsafe file name &apos;D:\delphisr\腾讯下载地址解析子串\k0028qzpkdl.321002.1.ts&apos;filelist.txt: Operation not permitted” 必须在命令中加入“-safe 0”</code></pre><h4 id="10、视频旋转"><a href="#10、视频旋转" class="headerlink" title="10、视频旋转"></a>10、视频旋转</h4><pre><code>ffmpeg -i input.mp4 -vf &quot;transpose=2&quot; output.mp4
 -vf表示过滤器，后边&quot;&quot;中的内容为过滤条件，此时transpose表示旋转
-旋转参数：0，1，2，3分别表示顺时针并左右翻转，顺时针，逆时针，逆时针并左右翻转
-
-
-{
-图片合成视频
-1、ffmpeg -f image2 -r 1 -i path\%d.jpg -vcodec mpeg4 path\out.mp4
+旋转参数：0，1，2，3分别表示顺时针并左右翻转，顺时针，逆时针，逆时针并左右翻转</code></pre><h4 id="11、多个MP3文件合成一个MP3-文件（连接，一段接一段）"><a href="#11、多个MP3文件合成一个MP3-文件（连接，一段接一段）" class="headerlink" title="11、多个MP3文件合成一个MP3 文件（连接，一段接一段）"></a>11、多个MP3文件合成一个MP3 文件（连接，一段接一段）</h4><pre><code>ffmpeg -i &quot;concat:a.mp3|b.mp3|c.mp3&quot;  -acodec copy output.mp3</code></pre><h4 id="12、多个MP3文件合成一个MP3-文件（混合，同时播放）"><a href="#12、多个MP3文件合成一个MP3-文件（混合，同时播放）" class="headerlink" title="12、多个MP3文件合成一个MP3 文件（混合，同时播放）"></a>12、多个MP3文件合成一个MP3 文件（混合，同时播放）</h4><pre><code>ffmpeg -i 124.mp3 -i 123.mp3 -filter_complex amix=inputs=2:duration=first:dropout_transition=2 -f mp3 output.mp3
+（-filter_complex ffmpeg滤镜功能，非常强大
+           amix是混合多个音频到单个音频输出
+           inputs=2代表是2个音频文件，如果更多则代表对应数字
+           duration 确定最终输出文件的长度 longest(最长)|shortest（最短）|first（第一个文件）</code></pre><h4 id="13、ffmpeg-压制高质量视频"><a href="#13、ffmpeg-压制高质量视频" class="headerlink" title="13、ffmpeg 压制高质量视频"></a>13、ffmpeg 压制高质量视频</h4><pre><code>方法1：ffmpeg -i 1.mp4 -vcodec libx264 -pix_fmt yuv420p -crf 16 -acodec copy 2.mp4
+-vcodec libx264指定H264编码器
+-pix_fmt yuv420p指定像素格式
+-crf 16 指定crf固定质量参数
+-acodec copy指定音频直接复制
+方法2：两遍编码模式 two pass
+ffmpeg -i 1.mp4 -vcodec libx264 -pix_fmt yuv420p -vb 6000k -pass 1 -f mp4 NUL
+ffmpeg -i 1.mp4 -vcodec libx264 -pix_fmt yuv420p -vb 6000k -pass 2 -f mp4 2.mp4
+-f mp4指定最终输出文件格式为mp4</code></pre><h4 id="14、多张图片合成视频"><a href="#14、多张图片合成视频" class="headerlink" title="14、多张图片合成视频"></a>14、多张图片合成视频</h4><pre><code>1、ffmpeg -f image2 -r 1 -i path\%d.jpg -vcodec mpeg4 path\out.mp4
 
  ffmpeg -r 1 -f concat -safe 0 -i path\list.txt -c:v libx264 (-vf fps=25) -pix_fmt yuv420p out.mp4
 
@@ -314,58 +336,7 @@ ffmpeg -r 25 -loop 1 -i xinjinping.jpg -pix_fmt yuv420p -vcodec libx264 -b:v 600
 -r 10 fps设置为10帧/秒（不同位置有不同含义，后面再解释）
 -i /tmpdir/image%04d.jpg 输入图片文件，图片文件保存为 image0001.jpg image0002.jpg ….
 -i audio.mp3 输入的音频文件
--absf aac_adtstoasc 将结果的音频格式转为faac格式时需要这个选项。将音频格式转为faac是因为在iphone上某些音频格式的视频无法播放，例如mp3. 但faac格式的音频的视频在iphone上可以播放。-absf 的意思是设置一个bitstream filter进行某些转换。可以用ffmpeg -bsfs 查看所有支持的bitstream filter。 bitstream filter和 aac_adtstoasc的具体含义我也说不上。但是如果不用这个选项又会导致转换失败。
-}
-
-单张图片合成视频
-//单张图片合成视频，这里需要用到-loop 1 开启循环，和-t 10 设置为10秒
-ffmpeg -r 1 -f image2 -loop 1 -i 1.png  -t 10 out.mp4 -y
-
-ffmpeg -i 1.jpg -filter_complex color=s=720x1280:c=black[vbg];[0:v]scale=720x1280[sv];[vbg][sv]overlay[vout] -map [vout] -ss 0 -to 10 -y 1.mp4
-ffmpeg -i 1.png -filter_complex color=s=500x500:c=black,trim=0:5[vbg];[0:v]scale=500x500[sv];[vbg][sv]overlay[vout] -map [vout] -y 1.mp4
-
-
-
-每隔一秒钟截取一帧图片
-ffmpeg -i C:\Users\Administrator\Desktop\8.mp4 -ss 00:00 -t 10 -r 1 -f image2 -vf fps=fps=1 C:\Users\Administrator\Desktop\e\%02d.png 
-提示： 
-1、-i 后面跟输入文件路径 
-2、-ss 后面跟开始截图的时间 -t 表示截取的视频长度为10s 
-3、-vf fps=fps=1 表示截图频率为每秒1帧（和-r 1的作用是一样的，所以可以去掉r 1） 
-4、-f image2表示输入或输出文件的格式是image2格式，f是format格式的意思
-
-截取视频前3秒 并转化为gif
-ffmpeg -ss 00:00:01 -t 3 -i C:\Users\Administrator\Desktop\9.mp4 -vf crop=iw:ih*2/3 -s 320x240 -r 7 C:\Users\Administrator\Desktop\8.gif
-提示：
-1、-ss 00：00：01表示从视频第一秒开始截取 
-2、- t 表示截图3秒钟的视频 
-3、-vf crop=iw:ih*2/3 表示截取视频的部分区域，其中宽为视频宽度，高为原视频的2/3 
-4、-r 7 表示每秒帧率为7帧 
-5、最后直接加上要生成的gif的路径就会把截取好的视频输出为gif了。
-
-gif转化为视频
-ffmpeg -f gif -i test.gif test.mp4
-转化高质量gif 修改比特率
-ffmpeg -i test.mp4 - b:v 2048k test.gif
-
-
-视频编码或码率控制方式：CBR恒定比特率   VBR可变比特率（使用较多）CRF固定质量码率控制方式
-
-ffmpeg 压制高质量视频
-方法一：ffmpeg -i 1.mp4 -vcodec libx264 -pix_fmt yuv420p -crf 16 -acodec copy 2.mp4
--vcodec libx264指定H264编码器
--pix_fmt yuv420p指定像素格式
--crf 16 指定crf固定质量参数
--acodec copy指定音频直接复制
-方法二：两遍编码模式 two pass
-ffmpeg -i 1.mp4 -vcodec libx264 -pix_fmt yuv420p -vb 6000k -pass 1 -f mp4 NUL
-ffmpeg -i 1.mp4 -vcodec libx264 -pix_fmt yuv420p -vb 6000k -pass 2 -f mp4 2.mp4
--f mp4指定最终输出文件格式为mp4
-
-MP4封装：H264视频编码+AAC音频编码
-OGG封装：Theora视频编码+Vorbis音频编码 开源免费
-
- IDM后台下载直播视频</code></pre>
+-absf aac_adtstoasc 将结果的音频格式转为faac格式时需要这个选项。将音频格式转为faac是因为在iphone上某些音频格式的视频无法播放，例如mp3. 但faac格式的音频的视频在iphone上可以播放。-absf 的意思是设置一个bitstream filter进行某些转换。可以用ffmpeg -bsfs 查看所有支持的bitstream filter。 bitstream filter和 aac_adtstoasc的具体含义我也说不上。但是如果不用这个选项又会导致转换失败。</code></pre>
       
 
       
@@ -484,6 +455,15 @@ OGG封装：Theora视频编码+Vorbis音频编码 开源免费
 
   
 <nav id="article-nav">
+  
+    <a href="/2020/05/04/Spring%E9%9B%86%E6%88%90SpringMVC%E5%92%8CThymeleaf/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Spring集成SpringMVC和Thymeleaf
+        
+      </div>
+    </a>
   
   
     <a href="/2020/05/03/Hexo%E6%9B%B4%E6%8D%A2yilia%E4%B8%BB%E9%A2%98%EF%BC%8C%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E8%AE%A1%EF%BC%8C%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
@@ -616,6 +596,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CKEditor</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -624,7 +612,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jmeter</a>
               </li>
              
               <li class="article-tag-list-item">
